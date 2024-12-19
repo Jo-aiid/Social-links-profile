@@ -1,0 +1,89 @@
+*,::after,::before{
+  box-sizing: border-box;
+}
+
+
+:root {
+  --active-btn: hsl(75, 94%, 57%);
+  --text-color: hsl(0, 0%, 100%);
+  --Grey-700: hsl(0, 0%, 20%);
+ --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+  --fs-body:87.5%rem:
+}
+body{
+  margin: 0;
+  font-family: "Inter", serif;
+  background-color: var(--Grey-900);
+  height: 100vh;
+  width:100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 85%;
+  min-width: 250px;
+  background: var(--Grey-800);
+  border-radius: .5rem;
+}
+.avatar img{
+  border-radius: 50%;
+  display: inline-block;
+  height: 4rem;
+  width:4rem;
+  margin-bottom: .6rem;
+}
+
+h1{
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin: 0;
+}
+
+h2.location{
+  font-size:0.6rem ;
+  color: var(--active-btn);
+}
+h2{
+  font-size:0.6rem ;
+  color: var(--text-color);
+  margin-bottom: .9rem;
+}
+a{
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: .8rem;
+
+}
+.btn{
+  background-color:var(--Grey-700);
+  padding: .8rem 1.5rem;
+  width: 80%;
+  margin-bottom: .6rem;
+  border-radius: .3rem;
+  display: flex;
+  justify-content: center;
+  transition: all 200ms ease-in-out;
+
+}
+.btn:hover,
+.btn:focus{
+  background-color: var(--active-btn);
+  color: var(--Grey-900);
+}
+.btn:hover a,
+.btn:focus a{
+  color: var(--Grey-900);
+}
+@media(width<=390px){
+  .container{
+    width: 90%;
+  }
+}
