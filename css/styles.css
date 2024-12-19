@@ -42,17 +42,17 @@ body{
 }
 
 h1{
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: var(--text-color);
   margin: 0;
 }
 
 h2.location{
-  font-size:0.6rem ;
+  font-size:0.8rem ;
   color: var(--active-btn);
 }
 h2{
-  font-size:0.6rem ;
+  font-size:0.8rem ;
   color: var(--text-color);
   margin-bottom: .9rem;
 }
